@@ -41,12 +41,13 @@ h1 {
 }
 input,
 select {
-    width: 120px;
+    width: 130px;
     height: 35px;
     border: 1px solid $blue-color;
     border-radius: 10px;
     margin: 10px;
     padding: 5px;
+    font-size: 15px;
     &[type="submit"] {
         background-color: $blue-color;
         color: white;
@@ -126,6 +127,7 @@ form {
         h5 {
             margin-bottom: 0;
             margin-right: 2px;
+            font-size: 15px;
         }
     }
 }
