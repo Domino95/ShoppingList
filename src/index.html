@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title> ShoppingList</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+  <!-- Main css file -->
+  <link rel="stylesheet" href="css/index.min.css" />
+  <!-- Custom styles -->
+  <style></style>
+</head>
+
+<body>
+  <!-- Start your project here-->
+  <div class="mainTitle">
+    <h1>Shopping List</h1>
+  </div>
+  <h3 id="error" class="error">Please complete all fields</h3>
+  <form id="form" value="value">
+    <div>
+      <label for="Category">Category</label>
+      <select name="Category" id="Category">
+        <option value="" disabled selected>Category</option>
+        <option value="bread">Bread</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="fruits">Fruits</option>
+        <option value="dairy">Dairy</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="Name">Name</label>
+      <input id="Name" type="text" />
+    </div>
+
+    <div>
+      <label for="Number">Number</label>
+      <input id="Number" type="number" step="0.1" />
+    </div>
+
+    <div>
+      <label for="pieces">Pieces </label>
+      <input type="radio" id="pieces" name="Radio" value="pieces" checked>
+    </div>
+
+    <div>
+      <label for="kilograms">Kilograms</label>
+      <input type="radio" id="kilograms" name="Radio" value="kilograms">
+    </div>
+
+
+    <input type="submit" value="Add Item"></input>
+  </form>
+
+
+  <!-- EDIT FORM -->
+  <div id="edit" class="edit">
+    <h3 id="editError" class="error">Please complete all fields</h3>
+    <form id="editForm" value="value">
+      <div>
+        <label for="editCategory">Category</label>
+        <select name="category" id="editCategory">
+          <option value="" disabled>Category</option>
+          <option value="bread">Bread</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="fruits">Fruits</option>
+          <option value="dairy">Dairy</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="editName">Name</label>
+        <input id="editName" type="text" />
+      </div>
+
+      <div>
+        <label for="editNumber">Number</label>
+        <input id="editNumber" type="number" step="0.1" />
+      </div>
+
+      <div>
+        <label for="pieces">Pieces: </label>
+        <input type="radio" id="pieces" name="editRadio" value="pieces" checked>
+      </div>
+
+      <div>
+        <label for="kilograms">Kilograms</label>
+        <input type="radio" id="kilograms" name="editRadio" value="kilograms">
+      </div>
+
+      <input type="submit" value="Edit"></input>
+    </form>
+  </div>
+  <!-- EDIT FORM END -->
+
+  <div id="allCounters" class="allCounters">
+    <h5>All pieces: </h5>
+    <p>0</p>
+    <h5>All weight: </h5>
+    <p>0</p>
+  </div>
+
+  <div class="list-container">
+    <div id="bread" class="elements-container">
+      <div class="title">
+        <h4>Bread</h4>
+      </div>
+      <div id="breadValue" class="countersContainer">
+        <h5>Pieces: </h5>
+        <p>0</p>
+        <h5>Weight: </h5>
+        <p>0</p>
+      </div>
+    </div>
+
+    <div id="vegetables" class="elements-container">
+      <div class="title">
+        <h4>Vegetables</h4>
+      </div>
+      <div id="vegetablesValue" class="countersContainer">
+        <h5>Pieces: </h5>
+        <p>0</p>
+        <h5>Weight: </h5>
+        <p>0</p>
+      </div>
+    </div>
+
+    <div id="fruits" class="elements-container">
+      <div class="title">
+        <h4>Fruits</h4>
+      </div>
+      <div id="fruitsValue" class="countersContainer">
+        <h5>Pieces: </h5>
+        <p>0</p>
+        <h4>Weight: </h4>
+        <p>0</p>
+      </div>
+    </div>
+
+    <div id="dairy" class="elements-container">
+      <div class="title">
+        <h4>Dairy</h4>
+      </div>
+      <div id="dairyValue" class="countersContainer">
+        <h5>Pieces: </h5>
+        <p>0</p>
+        <h5>Weight: </h5>
+        <p>0</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- End your project here-->
+
+</body>
+<!-- Main js file -->
+<script type="text/javascript" src="../js/index.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+
+</html>
